@@ -51,7 +51,6 @@ public class MyApp extends JFrame {
 
 	public static void main(String[] args) {
 		MyApp mf = new MyApp();
-
 	}
 
 }
