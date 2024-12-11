@@ -3,15 +3,11 @@ package swing;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
 
 public class MyApp extends JFrame {
-	private Color currentColor = Color.BLACK; 
-	private int selectedShape = 0;
 	private DrawPaneBuilder drawPane;
 	
 	public MyApp() {
