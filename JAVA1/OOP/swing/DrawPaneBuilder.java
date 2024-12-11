@@ -109,6 +109,9 @@ public class DrawPaneBuilder extends JPanel {
 	            } else {
 	                g.drawRect(rect.sPos.x, rect.sPos.y, rect.width, rect.height);
 	            }
+				System.out.println((rect.filled ? "Filled Rectangle" : "Rectangle") + 
+				                   " - x: " + rect.sPos.x + ", y: " + rect.sPos.y + 
+		                           ", width: " + rect.width + ", height: " + rect.height);
 	        }
 
         for (MyBox circle : circleList) {
@@ -118,6 +121,9 @@ public class DrawPaneBuilder extends JPanel {
 	            } else {
 	                g.drawOval(circle.sPos.x, circle.sPos.y, circle.width, circle.height);
 	            }
+				System.out.println((circle.filled ? "Filled Circle" : "Circle") + 
+				                   " - x: " + circle.sPos.x + ", y: " + circle.sPos.y + 
+		                           ", width: " + circle.width + ", height: " + circle.height);
 	        }
 		for (PencilDraw pencil : pencilList) {
             pencil.draw(g);
@@ -157,10 +163,4 @@ public class DrawPaneBuilder extends JPanel {
 
     public void setCurrentColor(Color color) {
         currentColor = color;
-        repaint();
-    }
-	
-
-
-    
-}
+ 
