@@ -32,12 +32,10 @@ public class MyApp extends JFrame {
 		
 		BottomPaneBuilder bottompane = new BottomPaneBuilder();
 		bottompane.buildbottompane(this);
-		//----------------------------------------------
 		
 		TreePaneBuilder treepane = new TreePaneBuilder();
 		treepane.buildtreepane(this);
 		
-		//----------------------------------------------
 		ListPaneBuilder listpane = new ListPaneBuilder();
 		listpane.buildlistpane(this);
 		
